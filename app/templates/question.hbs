@@ -1,0 +1,9 @@
+<h1>{{model.question.title}} by {{model.question.writer}}</h1>
+
+<ul>
+  {{#each model.answer as |answer|}}
+    <p>{{answer.title}} - {{answer.title}}</p>
+  {{/each}}
+</ul>
+
+{{add-review saveReview="saveReview" question=model.question}}

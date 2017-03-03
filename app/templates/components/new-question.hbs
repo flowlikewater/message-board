@@ -1,0 +1,19 @@
+{{#if newQuestion}}
+<div class='container' style='text-align: center'>
+  <h1>Write new question</h1>
+  <form>
+    <div class="form-group">
+      <label for="writer">writer</label>
+      {{input value=writer id="writer"}}
+    </div>
+    <div class="form-group">
+      <label for="title">title</label>
+      {{input value=title id="title"}}
+    </div>
+    <button {{action 'saveQuestion'}}> Save article </button>
+    <button {{action 'cancelQuestion'}}> Cancel </button>
+  </form>
+</div>
+{{else}}
+  <button {{action 'addNewQuestion'}}> New Article </button>
+{{/if}}
