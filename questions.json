@@ -2,9 +2,8 @@
   "questions": [{
     "writer": "Juliet",
     "title": "What is love?"
-    }],
-  "answers": [{
+    },{
     "writer": "Kevin",
-    "title": "Good"
-    }]
+    "title": "Where are the aliens?"
+  }]
 }

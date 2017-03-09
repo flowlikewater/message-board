@@ -1,17 +1,23 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(){
+  showAnswer: false,
+  model() {
     return Ember.RSVP.hash({
       questions: this.store.findAll('question'),
       answers: this.store.findAll('answer')
     });
   },
   actions: {
-    saveQuestion(params) {
-      var newQuestion = this.store.createRecord('question',params);
-      newQuestion.save();
-      this.transitionTo('index')
+    saveAnswer(params){
+      var newAnswer = this.store.createRecord('answer',params);
+      var question = params.question;
+      question.get('answers').addObject(newAnswer);
+      newAnswer.save();
+      this.transitionTo('index',question);
+    },
+    showAnswerNow(){
+      this.set('showAnswer',true)
     }
   }
 });

@@ -8,8 +8,9 @@ export default Ember.Component.extend({
     },
     saveReview() {
      var params = {
-       writer: this.get('writer'),
        title: this.get('title'),
+       writer: this.get('writer'),
+       rating: this.get('rating'),
        question: this.get('question')
      };
      this.set('addNewReview', false);

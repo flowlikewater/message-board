@@ -1,9 +1,5 @@
-<h1>{{model.question.title}} by {{model.question.writer}}</h1>
+<h2>More information about {{model.writer}}'s {{model.title}}</h2>
 
-<ul>
-  {{#each model.answer as |answer|}}
-    <p>{{answer.title}} - {{answer.title}}</p>
-  {{/each}}
-</ul>
-
-{{add-review saveReview="saveReview" question=model.question}}
+{{#each model.answers as |answer|}}
+  {{display-answers answer=answer}}
+{{/each}}

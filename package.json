@@ -1,7 +1,7 @@
 {
-  "name": "message-board2",
+  "name": "qna",
   "version": "0.0.0",
-  "description": "Small description for message-board2 goes here",
+  "description": "Small description for qna goes here",
   "license": "MIT",
   "author": "",
   "directories": {
@@ -15,10 +15,8 @@
     "test": "ember test"
   },
   "devDependencies": {
-    "bootstrap": "^4.0.0-alpha.6",
     "broccoli-asset-rev": "^2.4.5",
     "ember-ajax": "^2.4.1",
-    "ember-bootstrap": "1.0.0-alpha.5",
     "ember-cli": "2.11.0",
     "ember-cli-app-version": "^2.0.0",
     "ember-cli-babel": "^5.1.7",
@@ -40,6 +38,7 @@
     "ember-source": "^2.11.0",
     "ember-welcome-page": "^2.0.2",
     "emberfire": "2.0.6",
+    "firebase": "3.7.0",
     "loader.js": "^4.0.10"
   },
   "engines": {

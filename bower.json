@@ -1,6 +1,5 @@
 {
-  "name": "message-board2",
+  "name": "qna",
   "dependencies": {
-    "bootstrap": "^3.3.7"
   }
 }

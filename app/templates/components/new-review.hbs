@@ -3,12 +3,16 @@
   <div>
     <form>
       <div class="form-group">
+        <label for="title">title</label>
+        {{input value=title id="title"}}
+      </div>
+      <div class="form-group">
         <label for="writer">writer</label>
         {{input value=writer id="writer"}}
       </div>
       <div class="form-group">
-        <label for="title">title</label>
-        {{input value=title id="title"}}
+        <label for="rating">rating</label>
+        {{input value=rating id="rating"}}
       </div>
       <button {{action 'saveReview'}}>Save</button>
     </form>

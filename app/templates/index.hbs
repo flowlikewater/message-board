@@ -1,13 +1,11 @@
-<div class='container'>
-
-  {{#each model.questions as |question|}}
-      {{question-list question=question}}
+{{#each model.questions as |question|}}
+  {{question-tile question=question}}
+  {{new-answer saveAnswer="saveAnswer" question=question}}
+  {{#each question.answers as |answer|}}
+    {{display-answers answer=answer}}
   {{/each}}
-
-</div>
-
-<div class='container'>
-
-  {{new-question saveQuestion='saveQuestion'}}
-
-</div>
+{{/each}}
+<!--
+{{#each model.answer as |answer|}}
+  {{display-reviews answer=answer}}
+{{/each}} -->

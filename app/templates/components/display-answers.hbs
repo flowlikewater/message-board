@@ -1,0 +1,7 @@
+{{#if showAnswer}}
+  Rating: {{answer.rating}} by {{answer.writer}}
+  Comments: {{answer.title}}
+  <button {{action "hideAnswerNow"}}>Hide Answers</button>
+{{else}}
+  <button {{action 'showAnswerNow'}}>Show Answers</button>
+{{/if}}
