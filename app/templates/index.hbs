@@ -1,7 +1,6 @@
 {{#each model.questions as |question|}}
-  {{question-tile question=question}}
+  {{question-tile question=question update="update"}}
   {{new-answer saveAnswer="saveAnswer" question=question}}
-  {{edit-question update="update" question=question}}
   {{#each question.answers as |answer|}}
     {{display-answers answer=answer}}
   {{/each}}
