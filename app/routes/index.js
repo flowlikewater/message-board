@@ -18,6 +18,14 @@ export default Ember.Route.extend({
     },
     showAnswerNow(){
       this.set('showAnswer',true)
+    },
+    saveQuestion(params){
+      var publishQuestion = this.store.createRecord('question', params);
+      publishQuestion.save();
+      this.transitionTo('index');
+    },
+    update(question, params){
+      rental.save
     }
   }
 });

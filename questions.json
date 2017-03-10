@@ -1,9 +1,11 @@
 {
   "questions": [{
     "writer": "Juliet",
-    "title": "What is love?"
+    "title": "What is love?",
+    "details": "How do I know what I am feeling is love?"
     },{
     "writer": "Kevin",
-    "title": "Where are the aliens?"
+    "title": "Where are the aliens?",
+    "details": "There are so many planets in the goldilock zone..."
   }]
 }

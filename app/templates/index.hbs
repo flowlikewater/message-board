@@ -1,10 +1,12 @@
 {{#each model.questions as |question|}}
   {{question-tile question=question}}
   {{new-answer saveAnswer="saveAnswer" question=question}}
+  {{edit-question update="update" question=question}}
   {{#each question.answers as |answer|}}
     {{display-answers answer=answer}}
   {{/each}}
 {{/each}}
+{{add-question saveQuestion="saveQuestion"}}
 <!--
 {{#each model.answer as |answer|}}
   {{display-reviews answer=answer}}
